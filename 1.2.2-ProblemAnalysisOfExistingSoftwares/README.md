@@ -1,1 +1,10 @@
 ### Проблемний аналіз існуючих програмних продуктів
+
+
+|                                                                                                 | чистота воздуха окружающей среды | личная безопасность | получение информации | участие в спортивных соревнованиях | тип лицензии | пометка |
+|:-----------------------------------------------------------------------------------------------:|:--------------------------------:|:-------------------:|:--------------------:|:----------------------------------:|:------------:|:-------:|
+|                                    Продукт / поисковые фразы                                    |                3                 |                     |                      |                                    |  OpenSource  |         |
+|                    fresh air software - https://slatedigital.com/fresh-air/                     |                                  |          4          |                      |                                    |     Free     |         |
+|    agency of security software - https://www.cisa.gov/free-cybersecurity-services-and-tools     |                                  |                     |          4           |                                    |   FreeWare   |         |
+|    get information software - https://www.lifewire.com/free-system-information-tools-2625772    |                                  |                     |                      |                                    |  Shareware   |         |
+| sport competition software - https://www.g2.com/categories/athletic-competition-management/free |                                  |                     |                      |                 1                  | Proprietary  |         |
