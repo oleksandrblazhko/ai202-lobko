@@ -1,0 +1,12 @@
+{
+  "client": {
+      "name": "Daniil",
+      "phone": "+38 096 512 33 12"
+  },
+  "guard": {
+    "name": "Daniil",
+    "price": "300$",
+    "height": "182",
+    "weight": "74kg"
+  }
+}

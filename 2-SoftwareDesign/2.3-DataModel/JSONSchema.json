@@ -1,0 +1,56 @@
+{
+  "description": "Опис предметної області",
+  "type": "object",
+  "properties": {
+    "client": {
+      "description": "Опис клієнта",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я клієнта",
+          "type": "string"
+        },
+        "phone": {
+          "description": "номер клієнта",
+          "type": "string",
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "guard": {
+      "description": "Опис охоронця",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я охоронця",
+          "type": "string"
+        },
+        "price": {
+          "description": "ціна охоронця",
+          "type": "number"
+        },
+        "height": {
+          "description": "зріст охоронця",
+          "type": "string"
+        },
+        "weight": {
+          "description": "вага охоронця",
+          "type": "string"
+        },
+        "required": [
+          "name",
+          "price",
+          "height",
+          "weight"
+        ]
+      },
+      "required": [
+        "name",
+        "photo"
+      ]
+    }
+  }
+}
