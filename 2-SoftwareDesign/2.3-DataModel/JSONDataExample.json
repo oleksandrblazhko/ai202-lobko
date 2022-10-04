@@ -8,5 +8,31 @@
     "price": "300$",
     "height": "182",
     "weight": "74kg"
+  },
+  "managerSecurityAgency": {
+    "name": "Andrey",
+    "phone": "+38 095 512 33 12"
+  },
+  "managerMapPlaces": {
+    "name": "Andrey",
+    "phone": "+38 095 512 33 12"
+  },
+  "managerCompetitionPermission": {
+    "name": "Alexey",
+    "phone": "+38 095 513 33 12"
+  },
+  "GuardList": {
+  "country": "Ukraine",
+    "city": "Odessa"
+  },
+  "Map": {
+    "country": "Ukraine",
+    "city": "Odessa"
+  },
+  "Map": {
+    "result": "true",
+  },
+  "PlaceOfClearAir": {
+    "coordinates": "46°28′38″, 30°43′57″"
   }
 }

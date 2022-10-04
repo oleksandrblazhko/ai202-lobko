@@ -51,6 +51,114 @@
         "name",
         "photo"
       ]
+    },
+    "managerSecurityAgency": {
+      "description": "Опис менеджера",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "type": "string"
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "type": "string",
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },    "managerCompetitionPermission": {
+      "description": "Опис менеджера",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "type": "string"
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "type": "string",
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },    "managerMapPlaces": {
+      "description": "Опис менеджера",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "type": "string"
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "type": "string",
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "GuardList": {
+      "description": "Список охоронців",
+      "type": "object",
+      "properties": {
+        "county": {
+          "description": "Країна де формується список",
+          "type": "string"
+        },
+        "city": {
+          "description": "Місто де формується список",
+          "type": "string",
+          "required": [
+            "county",
+            "city"
+          ]
+        }
+      }
+    },
+    "Map": {
+      "description": "Список охоронців",
+      "type": "object",
+      "properties": {
+        "county": {
+          "description": "Країна де знаходяться місця чистого повітря",
+          "type": "string"
+        },
+        "city": {
+          "description": "Місто де знаходяться місця чистого повітря",
+          "type": "string",
+          "required": [
+            "county",
+            "city"
+          ]
+        }
+      }
+    },
+    "Permission": {
+      "description": "Дозвіл на участь у спортивних змаганнях",
+      "type": "object",
+      "properties": {
+        "result": {
+          "description": "результат запиту на дозвіл",
+          "type": "boolean"
+        }
+        }
+      },    "PlaceOfClearAir": {
+      "description": "Опис місця чистого повітря",
+      "type": "object",
+      "properties": {
+        "coordinates": {
+          "description": "координати місця",
+          "type": "string"
+        }
+      }
+    }
     }
   }
 }
