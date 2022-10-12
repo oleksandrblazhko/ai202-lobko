@@ -1,0 +1,205 @@
+{
+  "title": "Schema",
+  "description": "Опис предметної області",
+  "bsonType": "object",
+  "properties": {
+    "client": {
+      "description": "Опис клієнта",
+      "bsonType": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я клієнта",
+          "bsonType": "string",
+          "pattern": "^[A-ZЄ-ЯҐа-їґ\\- ']+$",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "phone": {
+          "description": "номер клієнта",
+          "bsonType": "string",
+          "pattern": "/^[0-9]{10}$/",
+          "minLength": 10,
+          "maxLength": 10,
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "guard": {
+      "description": "Опис охоронця",
+      "bsonType": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я охоронця",
+          "bsonType": "string",
+          "pattern": "^[A-ZЄ-ЯҐа-їґ\\- ']+$",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "price": {
+          "description": "ціна охоронця",
+          "bsonType": "number"
+        },
+        "height": {
+          "description": "зріст охоронця",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "weight": {
+          "description": "вага охоронця",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "name",
+        "price",
+        "height",
+        "weight"
+      ]
+    },
+    "managerSecurityAgency": {
+      "description": "Опис менеджера",
+      "bsonType": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "bsonType": "string",
+          "pattern": "^[A-ZЄ-ЯҐа-їґ\\- ']+$",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "bsonType": "string",
+          "pattern": "/^[0-9]{10}$/",
+          "minLength": 10,
+          "maxLength": 10,
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "managerCompetitionPermission": {
+      "description": "Опис менеджера",
+      "bsonType": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "bsonType": "string",
+          "pattern": "^[A-ZЄ-ЯҐа-їґ\\- ']+$",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "bsonType": "string",
+          "pattern": "/^[0-9]{10}$/",
+          "minLength": 10,
+          "maxLength": 10,
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "managerMapPlaces": {
+      "description": "Опис менеджера",
+      "bsonType": "object",
+      "properties": {
+        "name": {
+          "description": "Ім'я менеджера",
+          "bsonType": "string",
+          "pattern": "^[A-ZЄ-ЯҐа-їґ\\- ']+$",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "phone": {
+          "description": "номер менеджера",
+          "bsonType": "string",
+          "pattern": "/^\\+?(\\d{1,3})?[- .]?\\(?(?:\\d{2,3})\\)?[- .]?\\d\\d\\d[- .]?\\d\\d\\d\\d$/",
+          "minLength": 10,
+          "maxLength": 10,
+          "required": [
+            "name",
+            "phone"
+          ]
+        }
+      }
+    },
+    "GuardList": {
+      "description": "Список охоронців",
+      "bsonType": "object",
+      "properties": {
+        "county": {
+          "description": "Країна де формується список",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "city": {
+          "description": "Місто де формується список",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "required": [
+            "county",
+            "city"
+
+          ]
+        }
+      }
+    },
+    "Map": {
+      "description": "Список охоронців",
+      "bsonType": "object",
+      "properties": {
+        "county": {
+          "description": "Країна де знаходяться місця чистого повітря",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "city": {
+          "description": "Місто де знаходяться місця чистого повітря",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "required": [
+            "county",
+            "city"
+          ]
+        }
+      }
+    },
+    "Permission": {
+      "description": "Дозвіл на участь у спортивних змаганнях",
+      "bsonType": "object",
+      "properties": {
+        "result": {
+          "description": "результат запиту на дозвіл",
+          "bsonType": "boolean"
+        }
+      }
+    },
+    "PlaceOfClearAir": {
+      "description": "Опис місця чистого повітря",
+      "bsonType": "object",
+      "properties": {
+        "coordinates": {
+          "description": "координати місця",
+          "bsonType": "string",
+          "minLength": 1,
+          "maxLength": 64
+        }
+      }
+    }
+  }
+}
