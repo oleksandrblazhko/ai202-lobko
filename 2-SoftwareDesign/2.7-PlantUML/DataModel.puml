@@ -1,0 +1,23 @@
+@startjson
+
+title Example of JSON Data
+
+{ "client":
+	{
+		"name": "Alexey",
+		"phone": "+380966135533"
+	},
+"guard":
+	{
+    "name": "Daniil",
+    "price": "300$",
+    "height": "182",
+    "weight": "74kg"
+	},
+  "Map": {
+    "country": "Ukraine",
+    "city": "Odessa"
+  }
+}
+
+@endjson

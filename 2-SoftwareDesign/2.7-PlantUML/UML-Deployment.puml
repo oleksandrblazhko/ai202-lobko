@@ -1,0 +1,15 @@
+@startuml
+title Deployment for information System
+left to right direction
+node "<<Пристрій з підтримкою сучасного браузеру>>" as dk {
+  node "<<Будь-яка ОС>>" {
+    node "<<Веб-браузер>>" {
+      component [.js (Svelte.js)]
+    }
+  }
+}
+interface Клавіатура
+interface МаніпуляторМиша
+Клавіатура-- dk
+МаніпуляторМиша-- dk
+@enduml

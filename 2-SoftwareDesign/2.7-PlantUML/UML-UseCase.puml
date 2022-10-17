@@ -1,0 +1,36 @@
+@startuml
+title Usecase for Information system
+left to right direction
+skinparam packageStyle rect
+
+actor User
+actor managerSecurityAgency
+actor managerMapPlaces
+actor managerCompetitionPermission
+actor guard
+
+rectangle Software {
+  User --> (Authorization)
+  User --> (request to get permission for competition )
+  User --> (request to get map with places of fresh air )
+  managerMapPlaces--> (request to get map with places of fresh air )
+  (request to get map with places of fresh air ) --> (get places of fresh air) : <<include>>
+  managerCompetitionPermission--> (operate request)
+(operate request) --> (Get result of request) : <<include>>
+  managerSecurityAgency--> (provide agency info)
+  guard--> (choose guard)
+
+ (request to get permission for competition ) ..> (Get result of request) : <<include>>
+
+  (Get list of available guards) <-- managerSecurityAgency
+  (Get map with places of fresh air) <-- managerMapPlaces
+
+  (provide agency info) ..> (Get info from security agency) : <<include>>
+  (Authorization) --> (Get info from security agency) : <<include>>
+  (Get info from security agency) --> (Get list of available guards) : <<include>>
+  (Get list of available guards) --> (choose guard) : <<include>>
+(choose guard) --> (draw up a contract) : <<include>>
+(draw up a contract) --> (pay the bill) : <<include>>
+(pay the bill) --> (get the guard) : <<include>>
+}
+@enduml
