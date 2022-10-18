@@ -1,1 +1,1 @@
-![](http://www.plantuml.com/plantuml/uml/SoWkIImgoIhEp-FYAiaioKbLSAr8p2q0qlbf2bx1_duABeabYLnSrGfAEVd9IbPSdDLSd9nAENc9kQbALWfAZZcf5QcLIZeWmPJKWXAGcBQnXO6bcPcXiQcfiR4I5sUj3jT0QUQgvU9oICrB0NaG0000))
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai202-lobko/ai202-lobko_with_laboratory_work_7/2-SoftwareDesign/2.7-PlantUML/DataModel.puml)
