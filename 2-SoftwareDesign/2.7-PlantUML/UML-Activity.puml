@@ -1,0 +1,14 @@
+@startuml
+title Conditional - Activity Diagram
+
+start
+:Security agency provide list of services;
+:API provides map with places of fresh air;
+:Manager operate request to get permission for competition;
+if (Was the result of request successful?) then (Yes)
+  :User have permission;
+else (No)
+  :User don't have permission!;
+endif
+stop
+@enduml

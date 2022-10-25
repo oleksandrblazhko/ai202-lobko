@@ -1,0 +1,1 @@
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai202-lobko/ai202-lobko_with_laboratory_work_7/2-SoftwareDesign/2.7-PlantUML/UML-Activity.puml)
